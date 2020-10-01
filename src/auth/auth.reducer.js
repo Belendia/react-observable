@@ -6,6 +6,7 @@ import {
 
 const initialState = {
   username: undefined,
+  password: undefined,
   isLoggedIn: false,
   token: undefined,
 };

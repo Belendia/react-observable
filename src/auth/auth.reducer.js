@@ -6,12 +6,11 @@ import {
 
 const initialState = {
   username: undefined,
-  password: undefined,
   isLoggedIn: false,
   token: undefined,
 };
 
-export default function (state = initialState, action) {
+const reducer = (state = initialState, action) => {
   switch (action.type) {
     case LOGIN_SUCCESSFUL:
       return {
@@ -31,4 +30,6 @@ export default function (state = initialState, action) {
     default:
       return state;
   }
-}
+};
+
+export default reducer;
